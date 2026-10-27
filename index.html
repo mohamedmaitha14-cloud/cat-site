@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet adorable cats and discover your purrfect companion with Purrfect Paws."
+    />
+    <title>Purrfect Paws | Find Your Purrfect Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="logo">🐾 Purrfect<span>Paws</span></a>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html" class="">About Us</a>
+          <a href="breeds.html" class="">Cat Breeds</a>
+          <a href="contact.html" class="">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="favorites-link" type="button" data-open-favorites>
+            ♥ Favorites (<span data-favorite-count>0</span>)
+          </button>
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <span class="paw-decoration" aria-hidden="true">🐾</span>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">A LITTLE LOVE GOES A LONG WAY</span>
+            <h1>
+              Find Your <span class="highlight">Purrfect</span> Companion!
+            </h1>
+            <p>
+              Tiny paws, big personalities, and a whole lot of love. Meet
+              wonderful cats looking for a place to call home. Your new best
+              friend might be just one click away!
+            </p>
+            <div class="hero-actions">
+              <a href="breeds.html" class="btn btn-primary">Meet Our Cats 🐱</a
+              ><a href="about.html" class="btn btn-secondary">Our Story 💕</a>
+            </div>
+            <p class="small-text">
+              Every cat deserves a safe, loving forever home.
+            </p>
+          </div>
+          <div class="hero-image-wrap">
+            <img
+              class="hero-image"
+              src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=1000&q=85"
+              alt="Photo of Luna the cat"
+            />
+            <div class="floating-note">😻 Your new bestie awaits!</div>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="section-heading">
+          <span class="eyebrow">MEET YOUR MATCH</span>
+          <h2>Little Faces, <span class="highlight">Big Love</span></h2>
+          <p>
+            Every cat has a story. Maybe you are the next chapter in theirs.
+          </p>
+        </div>
+        <div class="cat-grid" id="featuredCats"></div>
+        <div class="center" style="margin-top: 35px">
+          <a href="breeds.html" class="btn btn-primary">Meet All the Cats →</a>
+        </div>
+      </section>
+      <section class="section" style="background: #f1eaff">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">WHY ADOPT?</span>
+            <h2>Love Changes <span class="highlight">Everything</span></h2>
+            <p>
+              Adoption is more than bringing a pet home. It is the beginning of
+              a beautiful friendship.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">🏡</div>
+              <h3>A Forever Home</h3>
+              <p>
+                Give a cat a safe place to relax, play, and feel loved every
+                day.
+              </p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">💗</div>
+              <h3>A Special Bond</h3>
+              <p>
+                Discover the joy of getting to know a cat's unique personality.
+              </p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">🐾</div>
+              <h3>A Fresh Start</h3>
+              <p>
+                Make room in your life for a companion who deserves a second
+                chance.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="split-grid">
+          <div>
+            <span class="eyebrow">EASY AS 1, 2, MEOW!</span>
+            <h2>
+              Your New Best Friend Is
+              <span class="highlight">Closer Than You Think</span>
+            </h2>
+            <p>
+              Finding your companion should feel exciting, not confusing. Start
+              exploring and take the next step when you find a cat you love.
+            </p>
+            <a href="about.html" class="btn">Learn About Adoption</a>
+          </div>
+          <div class="steps">
+            <article class="step-card">
+              <div class="step-number">1</div>
+              <h3>Explore</h3>
+              <p>Browse the cats and discover their personalities.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">2</div>
+              <h3>Choose</h3>
+              <p>Save your favorites and learn more about them.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">3</div>
+              <h3>Connect</h3>
+              <p>Send an inquiry about your chosen companion.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">4</div>
+              <h3>Welcome Home</h3>
+              <p>Prepare for a lifetime of purrs, play, and cuddles.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="cta">
+          <span class="eyebrow">YOUR CAT PERSON ERA STARTS HERE</span>
+          <h2>Someone Special Is Waiting for You 🐈</h2>
+          <p>
+            Find a cat who fits your lifestyle, save the ones you love, and
+            start your adoption journey.
+          </p>
+          <a href="breeds.html" class="btn btn-primary"
+            >Find My Purrfect Match</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="logo" style="color: white"
+              >🐾 Purrfect<span>Paws</span></a
+            >
+            <p>
+              A little kindness can change a cat's whole world. Find your
+              purrfect companion and start a new adventure together.
+            </p>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <div class="footer-links">
+              <a href="index.html">Home</a><a href="about.html">About Us</a
+              ><a href="breeds.html">Cat Breeds</a
+              ><a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div>
+            <h3>Spread the Love</h3>
+            <p>🐱 Adopt thoughtfully.</p>
+            <p>💗 Care for every paw.</p>
+            <p>🏡 Make room for love.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © 2026 Purrfect Paws. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside
+      class="favorites-drawer"
+      id="favoritesDrawer"
+      aria-label="Saved favorite cats"
+      aria-hidden="true"
+    >
+      <div class="drawer-header">
+        <div>
+          <h2>Your Favorites ♥</h2>
+          <p>Your future furry friends.</p>
+        </div>
+        <button
+          class="drawer-close"
+          id="closeFavorites"
+          aria-label="Close favorites"
+        >
+          ×
+        </button>
+      </div>
+      <div id="favoritesList"></div>
+    </aside>
+    <div
+      id="catModal"
+      class="drawer-backdrop"
+      style="z-index: 210; overflow-y: auto; padding: 25px"
+      hidden
+    >
+      <section
+        style="
+          background: #fff7e8;
+          border-radius: 25px;
+          padding: 25px;
+          width: min(560px, 100%);
+          margin: 30px auto;
+        "
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="catModalTitle"
+      >
+        <div class="drawer-header">
+          <h2 id="catModalTitle">Meet a Cat</h2>
+          <button
+            class="drawer-close"
+            id="closeCatModal"
+            aria-label="Close cat details"
+          >
+            ×
+          </button>
+        </div>
+        <div id="catModalContent"></div>
+      </section>
+    </div>
+    <template id="catPhotoPaths">
+      <img data-cat-id="cloud" src="images/cloud.jpg" alt="Cloud the cat" />
+      <img data-cat-id="coco" src="images/coco.jpg" alt="Coco the cat" />
+      <img data-cat-id="ginger" src="images/ginger.jpeg" alt="Ginger the cat" />
+      <img data-cat-id="luna" src="images/luna.jpeg" alt="Luna the cat" />
+      <img data-cat-id="misty" src="images/misty.jpg" alt="Misty the cat" />
+      <img data-cat-id="oliver" src="images/oliver.jpeg" alt="Oliver the cat" />
+      <img data-cat-id="mochi" src="images/mochi.jpeg" alt="Mochi the cat" />
+      <img
+        data-cat-id="peaches"
+        src="images/peaches.jpeg"
+        alt="Peaches the cat"
+      />
+      <img data-cat-id="pepper" src="images/pepper.jpeg" alt="Pepper the cat" />
+      <img
+        data-cat-id="pumpkin"
+        src="images/pumpkin.jpeg"
+        alt="Pumpkin the cat"
+      />
+      <img data-cat-id="simba" src="images/simba.jpg" alt="Simba the cat" />
+      <img data-cat-id="milo" src="images/milo.jpeg" alt="Milo the cat" />
+    </template>
+  </body>
+</html>
