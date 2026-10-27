@@ -1,6 +1,6 @@
 const PURRFECT_SUPABASE = {
-  url: "https://YOUR_PROJECT.supabase.co",
-  publishableKey: "YOUR_PUBLIC_PUBLISHABLE_KEY",
+  url: "https://jagdnzvzypcvieqbrjnt.supabase.co/",
+  publishableKey: "sb_publishable_nk8GVjO8hM-NxvTAd930XQ_SxvuY2QI",
 };
 
 const cats = [
@@ -455,7 +455,7 @@ function setupPage() {
     ) {
       show(
         "The adoption form is not connected yet. Please configure Supabase in js/script.js.",
-        true,
+        true
       );
       return;
     }
@@ -493,10 +493,17 @@ function setupPage() {
         "🐾 Thank you! Your adoption inquiry was submitted successfully. We'll be in touch soon.",
       );
       form.reset();
-    } catch (error) {
-      console.error("Inquiry submission failed:", error);
-      show("We couldn't submit your inquiry. Please try again later.", true);
-    } finally {
+    } 
+    catch (error) {
+      console.error("Supabase submission error:", error);
+
+      show(
+        "We couldn't submit your inquiry. Please try again later.",
+        true
+      );
+    }
+
+    finally {
       button.disabled = false;
       button.textContent = original;
     }
